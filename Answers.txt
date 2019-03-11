@@ -1,0 +1,33 @@
+1.1)Please propose a best practice for creating and managing page navigation in any React Native Social Network applications.
+How did you manage the structure in different main pages and subpages and integrate this with deep linking and push
+notification? Please explain the reasons and philosophies behind.
+
+Ans - My best practice to create any application is like, first I will create a basic structure of the project and then I will 
+look all the files related to the project structure after that I will create a basic design of the project on
+any blank paper and according to that design I will develop my project.
+To manage different screens and files in the project I will create different folders or packages, similer files will move to
+same package.
+Reason is simple - For maintainace and testing of the project it will be easy.
+
+1.2) Please explain a component life-circle inside a typical React Native application. Will there be any difference in different
+mobile device operating system?
+
+Ans - Let’s look at each phase of the component lifecycle. In React Native the Api contains 3major phases : mounting phase, updating phase and unmouting phase, so the order should be :
+a.)constructor(props) : this method is used to initialise our component with initial state.
+b.)componentWillMount() : this method is invoked only once before rendring the component for the first time. used generally to fetch data from external api 
+c.)render() : the render method must return a React Native component (JSX element ) to render (or null, to render nothing). in this step UI element is rendered
+d.)componentDidMount() : this method is also invoked once after the native UI for this component has finished rendering
+e.)componentWillUnmount() : This method is called when a component is being removed .
+
+I think there is no differnce because every mobile device like iOS or Android application behavior is same.
+
+1.3) Please explain a well-thought and well-designed React Native based application files structure and the reason behind it.
+ 
+Ans- Code organized by kind is certainly one of the most popular ways for javascript developers to structure 
+their applications, putting files in buckets based on what they are, 
+without considering the different relationships between the files.
+Categorizing files based on what they represent is an easy way of partitioning 
+your project and has became a popular practice with developers who use patterns such as MVC. 
+In my experience, that’s okay when you work on small applications, but it can have a tremendous 
+effect on the team’s velocity as the application grows.
+
