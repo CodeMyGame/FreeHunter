@@ -12,7 +12,7 @@ export default class ProfileSegment extends React.Component {
     var d = new Date();
     var year = d.getFullYear();
     var month = d.getMonth();
-    if(year==dataOfRegisterYear && (month - dataOfRegisterMonth)===1){
+    if(year===dataOfRegisterYear && (month - dataOfRegisterMonth)===1){
       newButtonDisplay = ''
     }else{
       newButtonDisplay='none'
