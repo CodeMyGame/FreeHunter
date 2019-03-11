@@ -29,7 +29,7 @@ export default class ProfileSegment extends React.Component {
           <View style={{flexDirection:'row',height:200,backgroundColor:'#fff',borderRadius:5,margin:10}}>
           <View style={{flex:1,alignItems:'center',marginTop:28}}>
             <Image
-              style={{width: 100, height: 100,borderRadius:100}}
+              style={{width: 100, height: 100,borderRadius:100/2}}
               source={{uri: this.props.picture}}
             />
             <Text>{this.props.title}</Text>
